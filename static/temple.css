@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body .showcase {
+  width: 80%;
 }
 
 body .side-transform {
@@ -71,5 +75,139 @@ body nav a {
 body nav a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+body .hero {
+  width: 100%;
+  color: #333;
+}
+
+body .title {
+  margin: 0;
+  width: 100%;
+  padding-top: 80px;
+  line-height: 1.15;
+  font-size: 48px;
+}
+
+body .title,
+body .description {
+  text-align: center;
+}
+
+body .row {
+  max-width: 880px;
+  margin: 80px auto 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .card-sm {
+  padding: 18px 18px 24px;
+  width: 220px;
+  height: 220px;
+  text-align: left;
+  text-decoration: none;
+  color: #434343;
+  border: 1px solid #ff414a;
+}
+
+body .card-sm h3 {
+  margin: 0;
+  color: #067df7;
+  font-size: 18px;
+}
+
+body .card-sm p {
+  margin: 0;
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: #333;
+}
+
+body .card-sm:hover {
+  border-color: #ff414a;
+  background-color: #ff414a;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .card-md {
+  padding: 18px 18px 24px;
+  width: 440px;
+  height: 440px;
+  text-align: left;
+  text-decoration: none;
+  color: #434343;
+  background-color: #ff414a;
+}
+
+body .card-md h3 {
+  margin: 0;
+  color: #067df7;
+  font-size: 18px;
+}
+
+body .card-md p {
+  margin: 0;
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: #333;
+}
+
+body .card-md:hover {
+  border-color: #ff414a;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 1px solid #ff414a;
+  background: url("/static/anime.jpg");
+}
+
+body .card-wd {
+  padding: 18px 18px 24px;
+  width: 90%;
+  height: 120px;
+  text-align: left;
+  text-decoration: none;
+  color: #434343;
+  background-color: gray;
+}
+
+body .card-wd h3 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+}
+
+body .card-wd p {
+  margin: 0;
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: #333;
+}
+
+body .card-wd:hover {
+  border-color: #ff414a;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 2px dashed gray;
+}
+
+body .card-wd:hover h3 {
+  color: gray;
 }
 /*# sourceMappingURL=temple.css.map */

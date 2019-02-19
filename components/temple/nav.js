@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Link from 'next/link'
-import { EILSEQ } from 'constants';
+import Anime from 'react-anime';
+import Anim from './anim';
 
 const links = [
   { href: 'https://github.com/reubensaunders', label: 'Github' }
@@ -9,14 +10,14 @@ const links = [
   return link
 })
 
-
 let lastScrollY = 0;
-let ticking = false;
+let ticking = false; 
 
 class Nav extends Component{
     constructor(props){
         super(props);
         this.state = {navClass: '', hidden: false};
+
     }
     
     componentDidMount() {
@@ -26,14 +27,16 @@ class Nav extends Component{
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     };
+    
 
     handleScroll = () => {
         lastScrollY = window.scrollY;
-    
+       
         if (!ticking) {
           window.requestAnimationFrame(() => {
               if (window.scrollY > 100) {
                 this.setState({hidden: true});
+                //stops glitchyness (nav flickering)
               }
               if (window.scrollY > 119)
               {
@@ -61,9 +64,10 @@ class Nav extends Component{
       };
 
     render(){
-        return(
-            <nav hidden={this.state.hidden} className={this.state.navClass}>            
-            <ul>
+        return(            
+            <nav hidden={this.state.hidden} className={this.state.navClass}>                         
+            
+            <ul>            
             <li>
                 <Link prefetch href="/">
                 <a>Hello</a>
@@ -81,8 +85,8 @@ class Nav extends Component{
                     </Link>
                 </li>
                 ))}      
-            </ul>
-        </nav>
+            </ul>                    
+        </nav>        
         )
     }
 }

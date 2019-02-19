@@ -1,6 +1,14 @@
+$pinkish:  rgb(255, 65, 74);
+
 body{
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    .showcase{
+        width: 80%;
+
+    }
+
+
     .side-transform{                
         transition: opacity 1s ease-out;
         ul {
@@ -50,6 +58,113 @@ body{
             transform: scale(1.2);
         }
        
+      }    
+      
+      .hero {
+        width: 100%;
+        color: #333;
+      }
+      .title {
+        margin: 0;
+        width: 100%;
+        padding-top: 80px;
+        line-height: 1.15;
+        font-size: 48px;
+      }
+      .title,
+      .description {
+        text-align: center;
+      }
+      .row {
+        max-width: 880px;
+        margin: 80px auto 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .card-sm {
+        padding: 18px 18px 24px;
+        width: 220px;
+        height: 220px;
+        text-align: left;
+        text-decoration: none;
+        color: #434343;        
+        border: 1px solid $pinkish;
+        h3 {
+            margin: 0;
+            color: #067df7;
+            font-size: 18px;
+          }
+          p {
+            margin: 0;
+            padding: 12px 0 0;
+            font-size: 13px;
+            color: #333;
+          }
+      }
+      .card-sm:hover {
+        border-color: $pinkish;
+        background-color:  $pinkish;
+        transition: all .3s ease-in-out;
+        transform: scale(1.1);
+      }
+      .card-md {
+        padding: 18px 18px 24px;
+        width: 440px;
+        height: 440px;
+        text-align: left;
+        text-decoration: none;
+        color: #434343;        
+        background-color:$pinkish;
+        h3 {
+            margin: 0;
+            color: #067df7;
+            font-size: 18px;
+          }
+          p {
+            margin: 0;
+            padding: 12px 0 0;
+            font-size: 13px;
+            color: #333;
+          }
+      }
+      .card-md:hover {
+        border-color: $pinkish;
+        // background-color: rgba(0, 0, 0, 0);
+        transition: all .3s ease-in-out;
+        transform: scale(1.1);
+        border: 1px solid$pinkish;
+        background: url('/static/anime.jpg');
+      }
+      .card-wd {
+        padding: 18px 18px 24px;
+        width: 90%;
+        height: 120px;
+        text-align: left;
+        text-decoration: none;
+        color: #434343;        
+        background-color:gray;
+        h3 {
+            margin: 0;
+            color:white;
+            font-size: 18px;
+          }
+          p {
+            margin: 0;
+            padding: 12px 0 0;
+            font-size: 13px;
+            color: #333;
+          }
+      }
+      .card-wd:hover {
+        h3{
+            color: gray;
+        }
+        border-color: $pinkish;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all .3s ease-in-out;
+        transform: scale(1.1);        
+        border: 2px dashed gray;
       }
 
 }

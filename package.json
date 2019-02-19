@@ -8,6 +8,7 @@
   "dependencies": {
     "next": "^8.0.1",
     "react": "^16.8.1",
+    "react-anime": "^2.2.0",
     "react-dom": "^16.8.1"
   }
 }

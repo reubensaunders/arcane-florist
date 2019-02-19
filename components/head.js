@@ -2,6 +2,7 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
+
 const defaultDescription = ''
 const defaultOGURL = ''
 const defaultOGImage = ''
@@ -9,9 +10,9 @@ const defaultOGImage = ''
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
-    <link href="/static/main.css" rel="stylesheet"/>
-    <link href="/static/temple.css" rel="stylesheet"/>
+    <title>{props.title || ''}</title>    
+    <link href="/static/temple.css" rel="stylesheet"/>    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
     <meta
       name="description"
       content={props.description || defaultDescription}

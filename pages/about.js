@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Nav from '../components/nav'
-import { stringify } from 'querystring';
+import Nav from '../components/temple/nav'
+import Section from '../components/section'
 
 const About = () => (
   <div>
-    <Head title="Home" />
+    <Head title="About" />
     <Nav />
 
     <div className="hero">
@@ -15,6 +15,28 @@ const About = () => (
       Hi, I'm Michael Saunders and I know exactly {4 * 4} things and {'jam donuts'.split('m')} are good
     </p>
   </div>   
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  <Section></Section>
+  
+
 </div>
 )
 
