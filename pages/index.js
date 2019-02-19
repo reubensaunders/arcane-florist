@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Nav from '../components/nav'
+import Nav from '../components/temple/nav'
+import Section from '../components/section'
 
 const Home = () => (
   <div>
@@ -9,10 +10,11 @@ const Home = () => (
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
+      <h1 className="title">Hello World</h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+      I'm a web developer from England. I like croissants, torrential rain and c#.        
       </p>
+      <Section/>      
 
       <div className="row">
         <Link href="https://github.com/zeit/next.js#getting-started">
@@ -37,6 +39,10 @@ const Home = () => (
           </a>
         </Link>
       </div>
+
+      <Section/>      
+      <Section/>      
+      <Section/>      
     </div>
   </div>
 )

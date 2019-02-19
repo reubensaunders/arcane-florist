@@ -11,6 +11,7 @@ const Head = props => (
     <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
     <link href="/static/main.css" rel="stylesheet"/>
+    <link href="/static/temple.css" rel="stylesheet"/>
     <meta
       name="description"
       content={props.description || defaultDescription}
