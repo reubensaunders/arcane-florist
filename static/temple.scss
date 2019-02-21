@@ -1,24 +1,40 @@
+@import 'alt';
+
 $bkg:   rgb(246, 246, 246);
-$pinkish:  rgb(255, 255, 255);
+$white:  rgb(255, 255, 255);
 $seconday:  rgb(123, 45, 248);
 
-body{
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background-color: $bkg;
-    .me-image{
+$primary-font: 'Scope One', serif;
+$seconday-font: 'Krub', sans-serif;
 
+body{
+    margin: 0;    
+    font-family: $primary-font;
+    background-color: $bkg;    
+    h3{
+      font-family: $seconday-font;
+    }
+    .skills{
+      text-align: center;
+      list-style: none;
+      padding-left: 0;
+    }
+    .me-image{
+      display: block;
+      align-self: center;
+      border-radius: 100em;
+      max-height: 200px;
+      left: 42.5%;
+      position: relative;
     }
     .showcase{
         width: 80%;
-
     }
     .blog{        
       color: rgba(0,0,0,0.4);
         h3{
             font-size: 52px !important;
             margin: 20px 20px 20px 20px;
-            
             text-align: left;
             // letter-spacing: 0.2em;
         }
@@ -28,10 +44,9 @@ body{
         }
     }
     footer{
-      border-top: 1px solid gray;
+      border-top: 1px solid $white;
       margin-top: 8em;
-      // background-color:gray;
-      min-height: 6em;
+      // background-color:gray;      
       .website{
         padding-top: 2em;
         bottom: 50%;
@@ -44,7 +59,7 @@ body{
     }
     .side-transform{                        
         transition: opacity 1s ease-in;
-        ul {
+        ul {            
             transition: 2ms;
             display: block;                 
             position:fixed;
@@ -70,19 +85,20 @@ body{
     }
     nav {
         text-align: center;
+        font-family: $seconday-font;        
         ul {
             display: flex;
             justify-content: center;        
             padding-left: 0;
           }
           nav > ul {
-            padding: 4px 16px;
+            padding: 4px 16px;            
           }
           li {
             display: flex;
-            padding: 6px 8px;
+            padding: 6px 8px;            
           }
-          a {
+          a {            
             color: $seconday;
             text-decoration: none;
             font-size: 13px;
@@ -101,9 +117,10 @@ body{
         padding-top: 80px;
         line-height: 1.15;
         font-size: 48px;
-      }
-      .title,
+        text-align: center;
+      }      
       .description {
+        font-family: $seconday-font;
         text-align: center;
       }
       .row {
@@ -120,7 +137,7 @@ body{
         text-align: left;
         text-decoration: none;
         color: #434343;        
-        border: 1px solid $pinkish;
+        border: 1px solid $white;
         h3 {
             margin: 0;
             color: $seconday;
@@ -134,8 +151,11 @@ body{
           }
       }
       .card-sm:hover {
-        border-color: $pinkish;
-        background-color:  $pinkish;
+        h3{
+          color: $white;
+        }
+        border-color: $seconday;
+        background-color:  $seconday;
         transition: all .3s ease-in-out;
         transform: scale(1.1);
       }
@@ -146,7 +166,7 @@ body{
         text-align: left;
         text-decoration: none;
         color: #434343;        
-        background-color:$pinkish;
+        background-color:$white;
         h3 {
             margin: 0;
             color: $seconday;
@@ -160,11 +180,14 @@ body{
           }
       }
       .card-md:hover {
-        border-color: $pinkish;
-        background-color: rgba(0, 0, 0, 0);
+        h3{
+          color: $white;
+        }
+        border-color: $seconday;
+        background-color: $seconday;
         transition: all .3s ease-in-out;
         transform: scale(1.1);
-        border: 1px solid$pinkish;
+        border: 1px solid$white;
         // background: url('/static/anime.jpg');
       }
       .card-wd {
@@ -191,7 +214,7 @@ body{
         h3{
             color: gray;
         }
-        border-color: $pinkish;
+        border-color: $white;
         background-color: rgba(0, 0, 0, 0);
         transition: all .3s ease-in-out;
         transform: scale(1.1);        

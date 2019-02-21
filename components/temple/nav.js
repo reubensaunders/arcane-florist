@@ -74,7 +74,7 @@ class Nav extends Component{
             </li>
             <li>
                 <Link prefetch href="/skills">
-                <a>Skills</a>
+                <a>&lt;3</a>
                 </Link>
             </li>      
             <li>

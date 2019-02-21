@@ -11,23 +11,25 @@ const Home = () => (
     <Head title="Hello" />
     <Nav />
 
-    <div className="hero">
-      <Anime easing="easeOutElastic" opacity={[0, 1.5]} translateY='-1rem' delay={(e, i) => i * 2000}>
-        <h1 className="title">Michael Saunders</h1>      
-      </Anime>
+    <div className="hero">  
+    <section className="light">
+    <div className="gradient1">
+      <h1 className="title">Michael Saunders</h1>     
+    </div>        
+    </section>
       <p className="description">
-      .net core and ES6 developer
+      .NET core and ES6 developer
       </p>
       <Section/>      
 
       <div className="row">
-        <Link href="https://github.com/zeit/next.js#getting-started">
+        <Link href="mailto:mreubensaunders@gmail.com">
           <a className="card-sm">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
+            <h3>Contact Me <i class="fas fa-envelope-square"></i> &rarr;</h3>
+            <p>Drop me a line.</p>
           </a>
         </Link>
-        <Link href="https://open.segment.com/create-next-app">
+        <Link href="https://github.com/reubensaunders">
           <a className="card-md">
             <h3>Examples &rarr;</h3>
             <p>
@@ -35,7 +37,7 @@ const Home = () => (
               <code>create-next-app</code> site
             </p>
           </a>
-        </Link>        
+        </Link>
       </div>
       <div className="row">
       <Link href="https://github.com/segmentio/create-next-app">
@@ -46,7 +48,9 @@ const Home = () => (
         </Link>
       </div>
     </div>
+    
     <Footer/>
+ 
   </div>
 )
 

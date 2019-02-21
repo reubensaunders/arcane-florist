@@ -2,10 +2,13 @@ import React from 'react'
 
 const Footer = () => (      
     <footer className="footer">
-    <div className="website">
-        <a href="">This Website!</a>
+    <section className="dark">
+    <div className="gradient1">
+    <h1>
+    Hi hi
+    </h1>    
     </div>
-
+    </section>    
     </footer>
 )
 

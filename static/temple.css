@@ -1,7 +1,169 @@
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  /* Page styling, ignore */
+}
+
+body section.light {
+  background: #f6f6f6;
+}
+
+@supports (mix-blend-mode: lighten) {
+  body section.light .gradient1 {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    background: #fff;
+    mix-blend-mode: multiply;
+  }
+  body section.light .gradient1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear,left top, right top,from(#00e6ff), to(#ff006a));
+    background: linear-gradient(to right,#00e6ff, #ff006a);
+    pointer-events: none;
+  }
+  body section.light .gradient1::before {
+    mix-blend-mode: screen;
+  }
+}
+
+@supports (mix-blend-mode: lighten) {
+  body section.light .gradient2 {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    background: #fff;
+    mix-blend-mode: multiply;
+  }
+  body section.light .gradient2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle, #23966c, #faaa54, #e23b4a, #db0768, #360670);
+    pointer-events: none;
+  }
+  body section.light .gradient2::before {
+    mix-blend-mode: screen;
+  }
+}
+
+body section.dark {
+  background: #222;
+}
+
+body section.dark .gradient1 {
+  color: #fff;
+}
+
+@supports (mix-blend-mode: lighten) {
+  body section.dark .gradient1 {
+    display: inline-block;
+    position: relative;
+    color: #f6f6f6;
+    background: #000;
+    mix-blend-mode: lighten;
+  }
+  body section.dark .gradient1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear,left top, right top,from(#00e6ff), to(#ff006a));
+    background: linear-gradient(to right,#00e6ff, #ff006a);
+    pointer-events: none;
+  }
+  body section.dark .gradient1::before {
+    mix-blend-mode: multiply;
+  }
+}
+
+body section.dark .gradient1 p {
+  font-size: 18px;
+}
+
+body section.dark .gradient2 {
+  color: #fff;
+}
+
+@supports (mix-blend-mode: lighten) {
+  body section.dark .gradient2 {
+    display: inline-block;
+    position: relative;
+    color: #f6f6f6;
+    background: #000;
+    mix-blend-mode: lighten;
+  }
+  body section.dark .gradient2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle, #23966c, #faaa54, #e23b4a, #db0768, #360670);
+    pointer-events: none;
+  }
+  body section.dark .gradient2::before {
+    mix-blend-mode: multiply;
+  }
+}
+
+body .gradient1 {
+  width: 100%;
+  margin: 0.5em;
+  opacity: 0.9;
+}
+
+body .gradient1 p {
+  font-size: 18px;
+}
+
+body .gradient2 {
+  text-align: center;
+  margin: 1em auto;
+  width: 10em;
+}
+
+body {
+  margin: 0;
+  font-family: "Scope One", serif;
   background-color: #f6f6f6;
+}
+
+body h3 {
+  font-family: "Krub", sans-serif;
+}
+
+body .skills {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+body .me-image {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 100em;
+  max-height: 200px;
+  left: 42.5%;
+  position: relative;
 }
 
 body .showcase {
@@ -24,9 +186,8 @@ body .blog p {
 }
 
 body footer {
-  border-top: 1px solid gray;
+  border-top: 1px solid white;
   margin-top: 8em;
-  min-height: 6em;
 }
 
 body footer .website {
@@ -37,10 +198,12 @@ body footer .website {
 }
 
 body .side-transform {
+  -webkit-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
 }
 
 body .side-transform ul {
+  -webkit-transition: 2ms;
   transition: 2ms;
   display: block;
   position: fixed;
@@ -56,6 +219,8 @@ body .side-transform nav > ul {
 }
 
 body .side-transform li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 8px;
 }
@@ -68,11 +233,16 @@ body .side-transform a {
 
 body nav {
   text-align: center;
+  font-family: "Krub", sans-serif;
 }
 
 body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 0;
 }
 
@@ -81,6 +251,8 @@ body nav nav > ul {
 }
 
 body nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 8px;
 }
@@ -92,7 +264,8 @@ body nav a {
 }
 
 body nav a:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body .hero {
@@ -106,19 +279,26 @@ body .title {
   padding-top: 80px;
   line-height: 1.15;
   font-size: 48px;
+  text-align: center;
 }
 
-body .title,
 body .description {
+  font-family: "Krub", sans-serif;
   text-align: center;
 }
 
 body .row {
   max-width: 880px;
   margin: 80px auto 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .card-sm {
@@ -145,10 +325,16 @@ body .card-sm p {
 }
 
 body .card-sm:hover {
-  border-color: white;
-  background-color: white;
+  border-color: #7b2df8;
+  background-color: #7b2df8;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .card-sm:hover h3 {
+  color: white;
 }
 
 body .card-md {
@@ -175,11 +361,17 @@ body .card-md p {
 }
 
 body .card-md:hover {
-  border-color: white;
-  background-color: transparent;
+  border-color: #7b2df8;
+  background-color: #7b2df8;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   border: 1px solid white;
+}
+
+body .card-md:hover h3 {
+  color: white;
 }
 
 body .card-wd {
@@ -207,12 +399,15 @@ body .card-wd p {
 
 body .card-wd:hover {
   border-color: white;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   border: 2px dashed gray;
 }
 
 body .card-wd:hover h3 {
   color: gray;
 }
+/*# sourceMappingURL=temple.css.map */

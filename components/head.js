@@ -10,8 +10,9 @@ const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>    
-    <link href="/static/temple.css" rel="stylesheet"/>    
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+    <link href="/static/temple.min.css" rel="stylesheet"/>        
+    <link href="https://fonts.googleapis.com/css?family=Krub|Scope+One" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <meta
       name="description"
       content={props.description || defaultDescription}
