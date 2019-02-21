@@ -1,19 +1,46 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
+  background-color: #f6f6f6;
 }
 
 body .showcase {
   width: 80%;
 }
 
+body .blog {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body .blog h3 {
+  font-size: 52px !important;
+  margin: 20px 20px 20px 20px;
+  text-align: left;
+}
+
+body .blog p {
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+}
+
+body footer {
+  border-top: 1px solid gray;
+  margin-top: 8em;
+  min-height: 6em;
+}
+
+body footer .website {
+  padding-top: 2em;
+  bottom: 50%;
+  text-align: center;
+  display: block;
+}
+
 body .side-transform {
-  -webkit-transition: opacity 1s ease-out;
-  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-in;
 }
 
 body .side-transform ul {
-  -webkit-transition: 2ms;
   transition: 2ms;
   display: block;
   position: fixed;
@@ -29,14 +56,12 @@ body .side-transform nav > ul {
 }
 
 body .side-transform li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 6px 8px;
 }
 
 body .side-transform a {
-  color: #067df7;
+  color: #7b2df8;
   text-decoration: none;
   font-size: 13px;
 }
@@ -46,12 +71,8 @@ body nav {
 }
 
 body nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-left: 0;
 }
 
@@ -60,21 +81,18 @@ body nav nav > ul {
 }
 
 body nav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 6px 8px;
 }
 
 body nav a {
-  color: #067df7;
+  color: #7b2df8;
   text-decoration: none;
   font-size: 13px;
 }
 
 body nav a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 body .hero {
@@ -98,15 +116,9 @@ body .description {
 body .row {
   max-width: 880px;
   margin: 80px auto 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 body .card-sm {
@@ -116,12 +128,12 @@ body .card-sm {
   text-align: left;
   text-decoration: none;
   color: #434343;
-  border: 1px solid #ff414a;
+  border: 1px solid white;
 }
 
 body .card-sm h3 {
   margin: 0;
-  color: #067df7;
+  color: #7b2df8;
   font-size: 18px;
 }
 
@@ -133,12 +145,10 @@ body .card-sm p {
 }
 
 body .card-sm:hover {
-  border-color: #ff414a;
-  background-color: #ff414a;
-  -webkit-transition: all .3s ease-in-out;
+  border-color: white;
+  background-color: white;
   transition: all .3s ease-in-out;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body .card-md {
@@ -148,12 +158,12 @@ body .card-md {
   text-align: left;
   text-decoration: none;
   color: #434343;
-  background-color: #ff414a;
+  background-color: white;
 }
 
 body .card-md h3 {
   margin: 0;
-  color: #067df7;
+  color: #7b2df8;
   font-size: 18px;
 }
 
@@ -165,13 +175,11 @@ body .card-md p {
 }
 
 body .card-md:hover {
-  border-color: #ff414a;
-  -webkit-transition: all .3s ease-in-out;
+  border-color: white;
+  background-color: transparent;
   transition: all .3s ease-in-out;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border: 1px solid #ff414a;
-  background: url("/static/anime.jpg");
+  transform: scale(1.1);
+  border: 1px solid white;
 }
 
 body .card-wd {
@@ -198,16 +206,13 @@ body .card-wd p {
 }
 
 body .card-wd:hover {
-  border-color: #ff414a;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all .3s ease-in-out;
+  border-color: white;
+  background-color: transparent;
   transition: all .3s ease-in-out;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   border: 2px dashed gray;
 }
 
 body .card-wd:hover h3 {
   color: gray;
 }
-/*# sourceMappingURL=temple.css.map */

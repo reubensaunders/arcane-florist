@@ -52,7 +52,7 @@ class Nav extends Component{
               {
                 this.setState({
                     navClass: '',
-                    hidden: false
+                    hidden: false                    
                   });
               }
             // this.nav.current.style.top = `${lastScrollY}px`;
@@ -64,9 +64,8 @@ class Nav extends Component{
       };
 
     render(){
-        return(            
-            <nav hidden={this.state.hidden} className={this.state.navClass}>                         
-            
+        return(               
+            <nav hidden={this.state.hidden} className={this.state.navClass}>                                     
             <ul>            
             <li>
                 <Link prefetch href="/">
@@ -74,10 +73,15 @@ class Nav extends Component{
                 </Link>
             </li>
             <li>
-                <Link prefetch href="/about">
-                <a>About</a>
+                <Link prefetch href="/skills">
+                <a>Skills</a>
                 </Link>
             </li>      
+            <li>
+                <Link prefetch href="/blog">
+                <a>Blog</a>
+                </Link>
+            </li>
                 {links.map(({ key, href, label }) => (
                 <li key={key}>
                     <Link href={href}>
@@ -87,6 +91,7 @@ class Nav extends Component{
                 ))}      
             </ul>                    
         </nav>        
+           
         )
     }
 }

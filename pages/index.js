@@ -3,16 +3,20 @@ import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/temple/nav'
 import Section from '../components/section'
+import Footer from '../components/temple/footer';
+import Anime from 'react-anime';
 
 const Home = () => (
   <div>
-    <Head title="Home" />
+    <Head title="Hello" />
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Reuben Saunders</h1>
+      <Anime easing="easeOutElastic" opacity={[0, 1.5]} translateY='-1rem' delay={(e, i) => i * 2000}>
+        <h1 className="title">Michael Saunders</h1>      
+      </Anime>
       <p className="description">
-      I'm a big fat nerd.        
+      .net core and ES6 developer
       </p>
       <Section/>      
 
@@ -41,17 +45,8 @@ const Home = () => (
           </a>
         </Link>
       </div>
-
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
-      <Section/>      
     </div>
+    <Footer/>
   </div>
 )
 

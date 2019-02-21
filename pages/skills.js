@@ -4,16 +4,30 @@ import Head from '../components/head'
 import Nav from '../components/temple/nav'
 import Section from '../components/section'
 
-const About = () => (
+const Skills = () => (
   <div>
-    <Head title="About" />
+    <Head title="Skills" />
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Hello World</h1>      
-      <p className="description">
-      Hi, I'm Michael Saunders and I know exactly {4 * 4} things and {'jam donuts'.split('m')} are good
-    </p>
+      <h1 className="title">My Skills</h1>      
+      <ul>
+      <li>.NET Core</li>
+      <li>C#</li>
+      <li>SQL (MS, Postgresql, MySQL)</li>
+      <li>React</li>
+      <li>Javascript</li>      
+      <li>ES6</li>      
+      <li>Vue</li>
+      <li>SASS</li>      
+      <li>REST</li>
+      <li>GraphQL</li>
+      <li>NodeJs</li>      
+      <li>AWS</li>
+      <li>Git</li>
+      <li>Bootstrap</li>
+      <li>Ruby On Rails</li>
+      </ul>      
   </div>   
   <Section></Section>
   <Section></Section>
@@ -40,4 +54,4 @@ const About = () => (
 </div>
 )
 
-export default About
+export default Skills

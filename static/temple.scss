@@ -1,16 +1,49 @@
-$pinkish:  rgb(255, 65, 74);
+$bkg:   rgb(246, 246, 246);
+$pinkish:  rgb(255, 255, 255);
+$seconday:  rgb(123, 45, 248);
 
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background-color: $bkg;
+    .me-image{
+
+    }
     .showcase{
         width: 80%;
 
     }
-
-
-    .side-transform{                
-        transition: opacity 1s ease-out;
+    .blog{        
+      color: rgba(0,0,0,0.4);
+        h3{
+            font-size: 52px !important;
+            margin: 20px 20px 20px 20px;
+            
+            text-align: left;
+            // letter-spacing: 0.2em;
+        }
+        p{            
+            padding: 20px 20px 20px 20px;
+            text-align: justify;
+        }
+    }
+    footer{
+      border-top: 1px solid gray;
+      margin-top: 8em;
+      // background-color:gray;
+      min-height: 6em;
+      .website{
+        padding-top: 2em;
+        bottom: 50%;
+        text-align: center;
+        display: block;
+        a{
+          
+        }        
+      }
+    }
+    .side-transform{                        
+        transition: opacity 1s ease-in;
         ul {
             transition: 2ms;
             display: block;                 
@@ -19,21 +52,21 @@ body{
             top:0;
             left: 10px;
             width:100%;
-            z-index:100;            
+            z-index:100;
           }
           nav > ul {
-            padding: 4px 16px;
+            padding: 4px 16px;            
           }
           li {
             display: flex;
-            padding: 6px 8px;
+            padding: 6px 8px;            
           }
           a {
-            color: #067df7;            
+            color: $seconday;            
             text-decoration: none;
             font-size: 13px;
+            
           }
-          
     }
     nav {
         text-align: center;
@@ -50,16 +83,14 @@ body{
             padding: 6px 8px;
           }
           a {
-            color: #067df7;
+            color: $seconday;
             text-decoration: none;
             font-size: 13px;
           }
           a:hover{              
             transform: scale(1.2);
         }
-       
-      }    
-      
+      }      
       .hero {
         width: 100%;
         color: #333;
@@ -92,7 +123,7 @@ body{
         border: 1px solid $pinkish;
         h3 {
             margin: 0;
-            color: #067df7;
+            color: $seconday;
             font-size: 18px;
           }
           p {
@@ -118,7 +149,7 @@ body{
         background-color:$pinkish;
         h3 {
             margin: 0;
-            color: #067df7;
+            color: $seconday;
             font-size: 18px;
           }
           p {
@@ -130,11 +161,11 @@ body{
       }
       .card-md:hover {
         border-color: $pinkish;
-        // background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
         transition: all .3s ease-in-out;
         transform: scale(1.1);
         border: 1px solid$pinkish;
-        background: url('/static/anime.jpg');
+        // background: url('/static/anime.jpg');
       }
       .card-wd {
         padding: 18px 18px 24px;

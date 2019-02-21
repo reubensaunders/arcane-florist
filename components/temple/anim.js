@@ -3,7 +3,7 @@ import Anime from 'react-anime';
 
 const Anim = () => (    
     <Anime easing="easeOutElastic"
-    duration={1000}
+    duration={1000}    
     direction="alternate"
     loop={true}
     delay={(el, index) => index * 240}
