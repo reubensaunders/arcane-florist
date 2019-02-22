@@ -16,7 +16,7 @@ let ticking = false;
 class Nav extends Component{
     constructor(props){
         super(props);
-        this.state = {navClass: '', hidden: false};
+        this.state = {navClass: '', hidden: false, anim: false};
 
     }
     
@@ -63,23 +63,32 @@ class Nav extends Component{
         }
       };
 
+      hoverOn = () => {
+        this.setState({ anim: true });
+      }
+
+      hoverOff = () => { 
+        this.setState({ anim: false });    
+      }
+
     render(){
         return(               
-            <nav hidden={this.state.hidden} className={this.state.navClass}>                                     
+            <nav hidden={this.state.hidden} className={this.state.navClass}>    
+            {this.state.anim == false ? 'not hovered' : 'hovered'}                                   
             <ul>            
             <li>
                 <Link prefetch href="/">
-                <a>Hello</a>
+                <a onMouseOver={this.hoverOn}>Hello</a>
                 </Link>
             </li>
             <li>
                 <Link prefetch href="/skills">
-                <a>&lt;3</a>
+                <a onMouseOver={this.hoverOn}>&lt;3</a>
                 </Link>
             </li>      
             <li>
                 <Link prefetch href="/blog">
-                <a>Blog</a>
+                <a onMouseOver={this.hoverOn}>Blog</a>
                 </Link>
             </li>
                 {links.map(({ key, href, label }) => (

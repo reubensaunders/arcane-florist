@@ -1,4 +1,4 @@
-$default-gradient: 'linear-gradient(to right,#00e6ff, #ff006a)';
+$default-gradient: 'linear-gradient(to right,#00e6ff,#7b2df8, #ff006a)';
 
 body{
 
@@ -76,7 +76,7 @@ body{
   
   .gradient1 {
     width: 100%;    
-    margin: 0.5em;
+    //margin: 0.5em;
     opacity: 0.9;
     p{
         font-size: 18px;

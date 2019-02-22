@@ -5,7 +5,7 @@ const Footer = () => (
     <section className="dark">
     <div className="gradient1">
     <h1>
-    Hi hi
+    Hi hi, welcome to the footer
     </h1>    
     </div>
     </section>    

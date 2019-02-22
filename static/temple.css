@@ -25,8 +25,8 @@ body section.light {
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear,left top, right top,from(#00e6ff), to(#ff006a));
-    background: linear-gradient(to right,#00e6ff, #ff006a);
+    background: -webkit-gradient(linear,left top, right top,from(#00e6ff),color-stop(#7b2df8), to(#ff006a));
+    background: linear-gradient(to right,#00e6ff,#7b2df8, #ff006a);
     pointer-events: none;
   }
   body section.light .gradient1::before {
@@ -82,8 +82,8 @@ body section.dark .gradient1 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear,left top, right top,from(#00e6ff), to(#ff006a));
-    background: linear-gradient(to right,#00e6ff, #ff006a);
+    background: -webkit-gradient(linear,left top, right top,from(#00e6ff),color-stop(#7b2df8), to(#ff006a));
+    background: linear-gradient(to right,#00e6ff,#7b2df8, #ff006a);
     pointer-events: none;
   }
   body section.dark .gradient1::before {
@@ -125,7 +125,6 @@ body section.dark .gradient2 {
 
 body .gradient1 {
   width: 100%;
-  margin: 0.5em;
   opacity: 0.9;
 }
 
@@ -145,8 +144,31 @@ body {
   background-color: #f6f6f6;
 }
 
+body ::-moz-selection {
+  background: #fd2163;
+  /* WebKit/Blink Browsers */
+}
+
+body ::selection {
+  background: #fd2163;
+  /* WebKit/Blink Browsers */
+}
+
 body h3 {
   font-family: "Krub", sans-serif;
+}
+
+body .big-quote {
+  padding: 100px 200px 50px 200px;
+  font-family: "Scope One", serif;
+  font-style: italic;
+  font-weight: thin;
+}
+
+body .big-quote h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #7b2df8;
 }
 
 body .skills {
@@ -266,6 +288,8 @@ body nav a {
 body nav a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 body .hero {
@@ -361,8 +385,8 @@ body .card-md p {
 }
 
 body .card-md:hover {
-  border-color: #7b2df8;
-  background-color: #7b2df8;
+  border-color: #737cf5;
+  background-color: #737cf5;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -webkit-transform: scale(1.1);

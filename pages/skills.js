@@ -3,30 +3,23 @@ import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/temple/nav'
 import Section from '../components/section'
+import skills from '../helpers/skills';
+import Level from '../components/temple/level';
+
+const skillsList = skills.fetch().map((d) => <span><li id={d.name.toLowerCase()} key={d.name}>{d.name}</li><Level level={d.level}/></span>);
 
 const Skills = () => (
   <div>
     <Head title="Skills" />
     <Nav />
-
     <div className="hero">
+    <section className="light">
+    <div className="gradient1">
       <h1 className="title">My Skills</h1>
+    </div>
+    </section>
       <ul className="skills">
-        <li>.NET Core</li>
-        <li>C#</li>
-        <li>SQL (MS, Postgresql, MySQL)</li>
-        <li>React</li>
-        <li>Javascript</li>      
-        <li>ES6</li>      
-        <li>Vue</li>
-        <li>SASS</li>      
-        <li>REST</li>
-        <li>GraphQL</li>
-        <li>NodeJs</li>      
-        <li>AWS</li>
-        <li>Git</li>
-        <li>Bootstrap</li>
-        <li>Ruby On Rails</li>
+        {skillsList}
       </ul>      
   </div>   
   <Section></Section>
@@ -49,8 +42,6 @@ const Skills = () => (
   <Section></Section>
   <Section></Section>
   <Section></Section>
-  
-
 </div>
 )
 
