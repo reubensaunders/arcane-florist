@@ -1,8 +1,8 @@
-@import 'alt';
+// @import 'alt';
 
 $bkg:   rgb(246, 246, 246);
 $white:  rgb(255, 255, 255);
-
+$gray:  rgb(194, 194, 194);
 $parma: #737cf5;
 $violet:  rgb(123, 45, 248);
 
@@ -12,11 +12,58 @@ $violet-font: 'Krub', sans-serif;
 
 body{
     margin: 0;    
+    color: $gray;
     font-family: $primary-font;
     background-color: $bkg;    
     ::selection {
       background: #fd2163; /* WebKit/Blink Browsers */
     }
+
+    .blog{
+      align-content: center;           
+      max-width: 45%;
+      display: inline-block;
+      h1{
+        font-weight: 500;
+        font-size: 52px;
+        padding: 0.2em 0px 0.2em 0px;
+      }
+      img{
+        width: inherit;
+        padding: 0.2em 0px 0.2em 0px;
+      }      
+      h3{
+        font-size: 16px !important;        
+        text-align: left;
+        // letter-spacing: 0.2em;
+      }
+      .quote{
+        
+      }
+      .blog-date{
+        text-align: left;
+        font-size: 0.7em;
+        letter-spacing: 0.2em;
+        padding: 0.2em 0px 0.2em 0px;
+        color: $gray;
+      }      
+      .legend {
+        display: block;
+        padding-left: 2px;
+        padding-right: 2px;
+        border-top: 1px dashed $gray;
+        padding: 0.2em 0em 0.2em 0em;
+      }
+      .title{
+        text-align: left;
+      }
+      p{
+        margin: unset;
+        padding: 0.2em 0px 0.2em 0px;
+        text-align: justify;
+      }
+    }
+
     h3{
       font-family: $violet-font;
     }
@@ -48,19 +95,7 @@ body{
     .showcase{
         width: 80%;
     }
-    .blog{        
-      color: rgba(0,0,0,0.4);
-        h3{
-            font-size: 52px !important;
-            margin: 20px 20px 20px 20px;
-            text-align: left;
-            // letter-spacing: 0.2em;
-        }
-        p{            
-            padding: 20px 20px 20px 20px;
-            text-align: justify;
-        }
-    }
+
     footer{
       border-top: 1px solid $white;
       margin-top: 8em;
@@ -173,6 +208,9 @@ body{
         h3{
           color: $white;
         }
+        p{
+          color: $white;
+        }        
         border-color: $violet;
         background-color:  $violet;
         transition: all .3s ease-in-out;

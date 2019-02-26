@@ -14,7 +14,9 @@ const skills = {
             {name: 'AWS', level: 6},
             {name: 'GIT', level: 6},
             {name: 'Bootstrap', level: 6},
-            {name: 'Ruby on Rails', level: 4}            
+            {name: 'Ruby on Rails', level: 4},         
+            {name: 'killing fools', level: 50}            
+
           ]
 
           return list;//materials.map(m => m.name);

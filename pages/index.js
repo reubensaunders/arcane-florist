@@ -4,17 +4,15 @@ import Head from '../components/head'
 import Nav from '../components/temple/nav'
 import Section from '../components/section'
 import Footer from '../components/temple/footer';
+import Top from '../components/temple/top';
 import Anime from 'react-anime';
-
-
-
-
-
 
 
 const Home = () => (
   <div>
+    <Top/>
     <Head title="Hello" />
+    
     <Nav />    
     <div id="hi" className="hero">
     <section className="light">
@@ -25,8 +23,7 @@ const Home = () => (
       <p className="description">
       .NET core and ES6 developer
       </p>
-      <Section/>
-
+    <Section/>
       <div className="row">
         <Link href="mailto:mreubensaunders@gmail.com">
           <a className="card-sm">
@@ -43,15 +40,7 @@ const Home = () => (
             </p>
           </a>
         </Link>
-      </div>
-      <div className="row">
-      <Link href="https://github.com/segmentio/create-next-app">
-          <a className="card-wd">
-            <h3>Portfolio &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
-          </a>
-        </Link>
-      </div>
+      </div>     
     </div>
     <div className="big-quote">
     <section className="light">

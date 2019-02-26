@@ -55,10 +55,19 @@ body{
   
   section.dark {
     background: #222;
+    z-index: 999;
     
     .gradient1 {
       color: #fff; // Fallback color
       
+      @include gradient-text($default-gradient, 'dark');
+      p{
+          font-size: 18px;
+      }
+    }
+    .gradient1-sm {
+      color: #fff; // Fallback color
+     
       @include gradient-text($default-gradient, 'dark');
       p{
           font-size: 18px;
@@ -81,6 +90,19 @@ body{
     p{
         font-size: 18px;
     }
+  }
+
+  .gradient1-sm {
+    width: 100%;    
+    display: block !important;
+    max-height: 1px !important;
+    background: none !important;
+    position: fixed !important;
+    top:0;            
+    width: 100% !important;
+    z-index: 1000 !important;    
+    //margin: 0.5em;
+    opacity: 0.9;    
   }
   
   .gradient2 {

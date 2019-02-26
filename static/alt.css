@@ -25,7 +25,6 @@ body section.light {
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear,left top, right top,from(#00e6ff),color-stop(#7b2df8), to(#ff006a));
     background: linear-gradient(to right,#00e6ff,#7b2df8, #ff006a);
     pointer-events: none;
   }
@@ -60,6 +59,7 @@ body section.light {
 
 body section.dark {
   background: #222;
+  z-index: 999;
 }
 
 body section.dark .gradient1 {
@@ -82,7 +82,6 @@ body section.dark .gradient1 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear,left top, right top,from(#00e6ff),color-stop(#7b2df8), to(#ff006a));
     background: linear-gradient(to right,#00e6ff,#7b2df8, #ff006a);
     pointer-events: none;
   }
@@ -92,6 +91,38 @@ body section.dark .gradient1 {
 }
 
 body section.dark .gradient1 p {
+  font-size: 18px;
+}
+
+body section.dark .gradient1-sm {
+  color: #fff;
+}
+
+@supports (mix-blend-mode: lighten) {
+  body section.dark .gradient1-sm {
+    display: inline-block;
+    position: relative;
+    color: #f6f6f6;
+    background: #000;
+    mix-blend-mode: lighten;
+  }
+  body section.dark .gradient1-sm::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right,#00e6ff,#7b2df8, #ff006a);
+    pointer-events: none;
+  }
+  body section.dark .gradient1-sm::before {
+    mix-blend-mode: multiply;
+  }
+}
+
+body section.dark .gradient1-sm p {
   font-size: 18px;
 }
 
@@ -132,9 +163,20 @@ body .gradient1 p {
   font-size: 18px;
 }
 
+body .gradient1-sm {
+  width: 100%;
+  display: block !important;
+  max-height: 1px !important;
+  background: none !important;
+  position: fixed !important;
+  top: 0;
+  width: 100% !important;
+  z-index: 1000 !important;
+  opacity: 0.9;
+}
+
 body .gradient2 {
   text-align: center;
   margin: 1em auto;
   width: 10em;
 }
-/*# sourceMappingURL=alt.css.map */
