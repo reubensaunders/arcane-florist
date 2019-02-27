@@ -13,8 +13,8 @@ const Blog = () => (
     
     <Nav/>
     <div id="hi" className="hero">
-      <h1 className="title">Lands End to John O'Groats      </h1>    
-      <h3>Northampton GP Dr David Smart completes his 969 mile cycle ride
+      <h1 className="title">Super Inspiring Post About Something!</h1>    
+      <h3>Smooth, delicious word soup. Yum yum yum!
       </h3>      
       <div className="blog-date">25/02/2019</div>                     
       <div className="legend"></div>      
@@ -33,7 +33,7 @@ const Blog = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet justo. Egestas dui id ornare arcu. Tempus urna et pharetra pharetra massa. Purus semper eget duis at tellus at urna. Odio aenean sed adipiscing diam. Cras fermentum odio eu feugiat pretium nibh. Egestas quis ipsum suspendisse ultrices gravida. Cursus sit amet dictum sit amet justo donec enim diam. Donec enim diam vulputate ut pharetra sit amet. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Tempor id eu nisl nunc. Non quam lacus suspendisse faucibus interdum posuere lorem. Tellus orci ac auctor augue mauris augue neque gravida in. Magna fermentum iaculis eu non. Eu consequat ac felis donec et odio pellentesque diam.</p>
       <p className="description">
 
-Turpis egestas integer eget aliquet nibh praesent. Dui sapien eget mi proin sed libero. Lorem sed risus ultricies tristique nulla aliquet. Pulvinar elementum integer enim neque volutpat ac. Nisi quis eleifend quam adipiscing vitae. Tristique sollicitudin nibh sit amet commodo. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Velit dignissim sodales ut eu. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Massa enim nec dui nunc mattis. Quis enim lobortis scelerisque fermentum dui. Nisl suscipit adipiscing bibendum est ultricies integer. Volutpat ac tincidunt vitae semper quis lectus. Arcu dictum varius duis at consectetur lorem donec massa. Sit amet commodo nulla facilisi nullam vehicula ipsum.
+Turpis egestas integer eget aliquet nibh praesent. Dui sapien eget mi proin sed libero. Lorem sed rsisus ultricies tristique nulla aliquet. Pulvinar elementum integer enim neque volutpat ac. Nisi quis eleifend quam adipiscing vitae. Tristique sollicitudin nibh sit amet commodo. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Velit dignissim sodales ut eu. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Massa enim nec dui nunc mattis. Quis enim lobortis scelerisque fermentum dui. Nisl suscipit adipiscing bibendum est ultricies integer. Volutpat ac tincidunt vitae semper quis lectus. Arcu dictum varius duis at consectetur lorem donec massa. Sit amet commodo nulla facilisi nullam vehicula ipsum.
 </p>
 <div className="big-quote" style={{padding: 'unset'}}>
 <section className="light">
